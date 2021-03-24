@@ -1,0 +1,35 @@
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://happywei.top:3306/vueblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: vueblog
+    password: vueblog
+#  redis:
+#    host: 47.99.130.80
+#    password: wangzhiwei1998
+#    port: 6379
+#    jedis:
+#      pool:
+#        max-active: 8
+#        max-idle: 8
+#        min-idle: 0
+#        max-wait: -1ms
+#      database: 0
+
+
+
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
+#    password: wangzhiwei1998
+
+markerhub:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    expire: 604800
+    header: Authorization
